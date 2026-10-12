@@ -10,8 +10,10 @@ workflows:
       xcode: latest
       cocoapods: default
       ios_signing:
-        distribution_type: app_store
-        bundle_identifier: com.wgghana.flexiphones
+        provisioning_profiles:
+          - flexi-profile
+        certificates:
+          - flexi-dist
     scripts:
       - name: Set up code signing
         script: xcode-project use-profiles
