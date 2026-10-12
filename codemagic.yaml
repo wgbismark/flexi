@@ -11,7 +11,7 @@ workflows:
       cocoapods: default
       ios_signing:
         provisioning_profiles:
-          - flexi-profile
+          - flexi-profile2
         certificates:
           - flexi-dist
     scripts:
